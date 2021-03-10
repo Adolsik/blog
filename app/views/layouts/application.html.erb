@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html style="margin-bottom: 1vw">
+  <head>
+    <title>Blog</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+	<%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+  </head>
+
+  <body>
+  	<section class="hero is-primary is-small">
+	  <div class="hero-head">
+	    <nav class="navbar">
+	      <div class="container">
+	        <div class="navbar-brand">
+	          <%= link_to 'Strona główna', root_path, class: "navbar-item" %>
+	          <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+	            <span></span>
+	            <span></span>
+	            <span></span>
+	          </span>
+	        </div>
+	        <div id="navbarMenuHeroA" class="navbar-menu">
+	          <div class="navbar-end">
+	            	<%= link_to "Utwórz nowy post", new_post_path, class:"navbar-item" %>
+	          </div>
+	        </div>
+	      </div>
+	    </nav>
+	  </div>
+
+	  <div class="hero-body">
+	    <div class="container has-text-centered">
+	      <p class="is-size-1" style="margin-bottom: 3rem;">
+	        <%= yield :page_title %>
+	      </p>
+	    </div>
+	  </div>
+	</section>
+    <%= yield %>
+  </body>
+</html>
+
+<div class="container">
+  <div class="notification is-primary">
+    <p class="has-text-centered" style="opacity: 0.9">
+		Copyright by Adrian Uryga, 2021 &copy
+	</p>
+  </div>
+</div>
+
+
+
+
+  
