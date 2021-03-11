@@ -5,7 +5,7 @@
 		<nav class="level">	  
 		  <div class="level-left">
 		  	<p class="level-item">
-		    	<%= link_to "Edytuj post", edit_post_path(@post), class:"button is-info" %>
+		    	<%= link_to "Edytuj post", edit_post_path(@post), class:"button is-warning" %>
 		  	</p>
 		  	<p class="level-item">
 				<%= link_to "Usuń post", post_path(@post), method: :delete, data: { confirm: "Na pewno chcesz usunąć ten post?" }, class:"button is-danger" %>
