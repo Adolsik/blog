@@ -1,1 +1,1 @@
-Blog projekt na praktyki 2021
+Blog made in "Ruby on Rails"
